@@ -1,60 +1,83 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Tyler Li</title>
 
     <style>
-        .master-div {
-            margin: auto;
-            padding: 10px;
-            text-align: center;
+      .master-div {
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: "Indie Flower", cursive;
+        font-size: 50px;
+        line-height: 40px;
+      }
+
+      h2 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 30px;
+      }
+
+      .cat {
+        width: 50%;
+        height: auto;
+        animation: brrrr 0.1s linear 0s infinite alternate forwards;
+      }
+
+      @keyframes brrrr {
+        0% {
+          transform: translate(0);
         }
 
-        h1 {
-            font-family: 'Indie Flower', cursive;
-            font-size: 50px;
-            line-height: 40px;
+        20% {
+          transform: translate(2px, -2px);
         }
 
-        h2 {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 30px;
+        40% {
+          transform: translate(2px, 2px);
         }
 
+        60% {
+          transform: translate(-2px, 2px);
+        }
+
+        80% {
+          transform: translate(-2px, -2px);
+        }
+
+        100% {
+          transform: translate(0);
+        }
+      }
+
+      @media screen and (min-width: 601px) {
         .cat {
-            width: 50%;
-            height: auto;
-            transition: transform .3s;
+          width: 30%;
         }
-
-        .cat:hover {
-            transform: scale(1.5);
-        }
-
-        @media screen and (min-width: 601px) {
-            .cat {
-                width: 30%;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="master-div">
-        <h1>Hey (with rizz)</h1>
-        <a href="https://www.youtube.com/watch?v=8M3WUaeIbOk" target="_blank"><img src="cat.jpg" class="cat"
-                alt="Cat"></a>
-        <h2>(´▽｀)</h2>
+      <h1>Hey (with rizz)</h1>
+      <a href="https://www.youtube.com/watch?v=8M3WUaeIbOk" target="_blank"
+        ><img src="cat.jpg" class="cat" alt="Cat"
+      /></a>
+      <h2>(´▽｀)</h2>
     </div>
-
-</body>
-
+  </body>
 </html>
