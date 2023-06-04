@@ -12,9 +12,15 @@
     <title>Tyler Li</title>
 
     <style>
+        .master-div {
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+        }
+
         h1 {
             font-family: 'Indie Flower', cursive;
-            font-size: 60px;
+            font-size: 50px;
             line-height: 40px;
         }
 
@@ -24,15 +30,14 @@
         }
 
         .cat {
-            width: auto;
+            width: 50%;
             height: auto;
         }
 
-        .master-div {
-            margin: auto;
-            width: 50%;
-            padding: 10px;
-            text-align: center;
+        @media screen and (min-width: 601px) {
+            .cat {
+                width: 30%;
+            }
         }
     </style>
 </head>
